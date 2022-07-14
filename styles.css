@@ -39,15 +39,10 @@
 .page__title{
   font-size: 1.5rem;
   margin-top: 10px;
-  color: #131313;
+  color: #DC522C;
   margin-bottom: 20px;
 }
 
-.embed__chat{
-  background-color: #131313;
-  background-image: linear-gradient(to top, #ff8177 0%, #fe5196 100%);
-
-}
 
 .btn {
   font-size: 1rem;
