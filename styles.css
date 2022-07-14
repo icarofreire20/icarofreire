@@ -1,0 +1,102 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  margin-left: 10px;
+  margin-top: 15px;
+  padding: 0;
+  background-color: #ff8177
+
+}
+
+.main h1 {
+  font-size: 3rem;
+  color: #131313 ;
+
+}
+
+.main h2 {
+  font-size: 2.5rem;
+  margin-top: 10px;
+  color: #131313;
+}
+
+.main p {
+  margin-top: 0.2rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #131313;
+}
+
+.chats_options {
+  height: flex;
+  c
+  font-size: 2rem;
+  position: sticky;
+  top: 100px;
+  background-color: transparent;
+}
+
+.page__title{
+  font-size: 1.5rem;
+  margin-top: 10px;
+  color: #131313;
+  margin-bottom: 20px;
+}
+
+.embed__chat{
+  background-color: #131313;
+  background-image: linear-gradient(to top, #ff8177 0%, #fe5196 100%);
+
+}
+
+.btn {
+  font-size: 1rem;
+  background-image: linear-gradient(to top, #ff8177 0%, #fe5196 100%);
+  padding: 14px 32px;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  margin-top: 2rem;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.35s;
+  outline: none;
+}
+
+.btn a {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.btn:after {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #4837ff;
+  transition: all 0.35s;
+  border-radius: 4px;
+}
+
+.btn:hover {
+  color: #fff;
+}
+
+.btn:hover:after {
+  width: 100%;
+}
+
+.logo__img--container {
+  text-align: center;
+  margin-top: 4rem;
+}
+
+#logo__img {
+  height: 20%;
+  width:  20%;
+}

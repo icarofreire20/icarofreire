@@ -1,18 +1,17 @@
 <!DOCTYPE html>
-<p>Genesys Cloud WebChat test page</p>
 
-	<ul>
-		<li> <a href="index.html">Genesys Test Site Home Page</a> </li>
-	</ul>
+
 <head lang="en">
     <meta charset="UTF-8">
     <title>Genesys Cloud WebChat Example</title>
+	<link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+	<div class= "page__title">
+		<h1>Genesys Cloud WebChat Example</h1>
+	</div>
 
-    <h1>Genesys Cloud WebChat Example</h1>
- 
-<script type="text/javascript">
+<script class="embed__chat" type="text/javascript">
   window._genesys = {
 	widgets: {
 		webchat: {
@@ -48,7 +47,7 @@
 };
 </script>
 
-<script>
+<script class="embed__chat">
 
 if(!window._genesys.widgets.extensions){
 
@@ -93,7 +92,7 @@ oTestExtension.subscribe('WebChatService.ended', function (e) {
 
  <script src="https://apps.mypurecloud.com/widgets/9.0/cxbus.min.js" onload="javascript:CXBus.configure({debug:false,pluginsPath:'https://apps.mypurecloud.com/widgets/9.0/plugins/'}); CXBus.loadPlugin('widgets-core');"></script>
 
-	<script>
+	<script class="embed__chat">
     const customPlugin = CXBus.registerPlugin('Custom');
 
     customPlugin.subscribe('WebChatService.started', function (e) {
@@ -105,9 +104,9 @@ oTestExtension.subscribe('WebChatService.ended', function (e) {
     });
 	</script>
 	
-<button type="button" id="chat-button" onclick="customPlugin.command('WebChat.open', getAdvancedConfig());">Start Chat</button>
+<button class="btn" type="button" id="chat-button" onclick="customPlugin.command('WebChat.open', getAdvancedConfig());"><a>Start Chat</a></button>
 
-  <script type="text/javascript">
+  <script class="embed__chat" type="text/javascript">
 		function getAdvancedConfig() {
 			return {
 				form: {
@@ -118,7 +117,7 @@ oTestExtension.subscribe('WebChatService.ended', function (e) {
 					subject: 'Populated from data'
 				},
 				formJSON: {
-					wrapper: '<table></table>',
+					wrapper: '<table class="embed__chat"></table>',
 					inputs: [
 						// Default fields
 						{
@@ -163,10 +162,10 @@ oTestExtension.subscribe('WebChatService.ended', function (e) {
 			};
 		}
 	</script>
-	<button type="button" id="chat-button" onclick="customPlugin.command('WebChat.open', getAdvancedConfig());">Start Chat (with data)</button>
+	<button class="btn" type="button" id="chat-button" onclick="customPlugin.command('WebChat.open', getAdvancedConfig());"><a>Start Chat (with data)</a></button>
 
 
-<script>
+<script class="embed__chat">
   (function(a,t,c,l,o,u,d){a['_genesysJourneySdk']=o;a[o]=a[o]||function(){
   (a[o].q=a[o].q||[]).push(arguments)},a[o].l=1*new Date();u=t.createElement(c),
   d=t.getElementsByTagName(c)[0];u.async=1;u.src=l;u.charset='utf-8';d.parentNode.insertBefore(u,d)
@@ -175,6 +174,11 @@ oTestExtension.subscribe('WebChatService.ended', function (e) {
   ac('pageview');
 </script>
 
+	<!-- Back Button -->
+	<div>
+	<button class="btn"><a href="index.html">Home</a></button>
+	</div>
+	<div class="embed__chat"></div>
 </body>
 </html>
 <!-- comment -->
