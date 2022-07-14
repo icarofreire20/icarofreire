@@ -36,13 +36,16 @@
   background-color: transparent;
 }
 
-.page__title{
+.page__title {
   font-size: 1.5rem;
   margin-top: 10px;
   color: #DC522C;
   margin-bottom: 20px;
 }
 
+.form_edit {
+  color = #fff;
+}
 
 .btn {
   font-size: 1rem;
