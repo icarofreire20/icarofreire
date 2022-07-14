@@ -4,27 +4,27 @@
   margin-left: 10px;
   margin-top: 15px;
   padding: 0;
-  background-color: #ff8177
+  background-color: #353537
 
 }
 
 .main h1 {
   font-size: 3rem;
-  color: #131313 ;
+  color: #DC522C ;
 
 }
 
 .main h2 {
   font-size: 2.5rem;
   margin-top: 10px;
-  color: #131313;
+  color: #DC522C;
 }
 
 .main p {
   margin-top: 0.2rem;
   font-size: 1.5rem;
   font-weight: 700;
-  color: #131313;
+  color: #DC522C;
 }
 
 .chats_options {
@@ -51,7 +51,7 @@
 
 .btn {
   font-size: 1rem;
-  background-image: linear-gradient(to top, #ff8177 0%, #fe5196 100%);
+  background-image: linear-gradient(to top, #353537 0%, #353537 100%);
   padding: 14px 32px;
   border: none;
   border-radius: 4px;
@@ -78,7 +78,7 @@
   left: 0;
   width: 0;
   height: 100%;
-  background: #4837ff;
+  background: #DC522C;
   transition: all 0.35s;
   border-radius: 4px;
 }
