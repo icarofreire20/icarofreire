@@ -9,12 +9,23 @@
 	<div class= "page__title">
 		<h1>Test Page 2</h1>
 	</div>
-	
+
+	<button class="btn" id="green-button" onclick="database123()">
+	  DataBase.Update
+	</button>
 	<!-- Back Button -->
 	<div>
 	<button class="btn"><a href="webmessaging.html">Back</a></button>
 	</div>
-	
+
+	<script type="text/javascript">
+		
+	  function database123(){
+		console.log("database update");
+		Genesys("command", "Database.set", { messaging: { customAttributes: { context.customField1: "this is from the web page" }}});
+	  };
+	</script>
+
 <script type="text/javascript" charset="utf-8">
   (function (g, e, n, es, ys) {
     g['_genesysJs'] = e;
