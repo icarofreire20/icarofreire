@@ -10,10 +10,24 @@
 		<h1>Test Page 1</h1>
 	</div>
 	
+	<button class="btn" id="green-button" onclick="clickevent123()">
+	  journey track
+	</button>
+	
 	<!-- Back Button -->
 	<div>
 	<button class="btn"><a href="webmessaging.html">Back</a></button>
 	</div>
+
+	<script type="text/javascript">
+		
+	  function clickevent123(){
+		console.log("clicked journey tracker");
+		Genesys("command", "Journey.trackClickEvents", {
+		  clickEvents: [{ selector: "button.green-button", eventName: "green_button_clicked" }]
+		});
+	  };
+	</script>
 	
 <script type="text/javascript" charset="utf-8">
   (function (g, e, n, es, ys) {
