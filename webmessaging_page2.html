@@ -10,7 +10,7 @@
 		<h1>Test Page 2</h1>
 	</div>
 
-	<button class="btn" id="green-button" onclick="database123()">
+	<button class="btn" id="green-button" onclick="database456()">
 	  DataBase.Update
 	</button>
 	<!-- Back Button -->
@@ -19,8 +19,7 @@
 	</div>
 
 	<script type="text/javascript">
-		
-	  function database123(){
+	  function database456(){
 		console.log("database update");
 		Genesys("command", "Database.set", { messaging: { customAttributes: { context.customField1: "this is from the web page" }}});
 	  };
