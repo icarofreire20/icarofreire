@@ -8,14 +8,6 @@
 
 }
 
-.softphone {
-    width: 600px;
-    height: 850px;
-    position: fixed;
-    top: 10px;
-    right: 10px;
-}
-
 .main h1 {
   font-size: 3rem;
   color: #DC522C ;
