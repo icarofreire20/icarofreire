@@ -1,23 +1,40 @@
 <!DOCTYPE html>
 
+<html>
+	<head lang="en">
+	    <meta charset="UTF-8">
+	    <link rel="stylesheet" href="styles.css">
+	    <title>Genesys Cloud WebChat Example</title>
+		<style>
+		.iframe-wrapper {
+			/* This div acts as the container for the margin effect */
+			display: inline-block; /* Wraps tightly around the iframe */
+			padding: 15px;         /* Creates the light blue "margin" effect */
+			background-color: #DC522C; 
+			border: 1px solid blue; /* Optional: adds an outline to the margin area */
+		}
+		
+		.my-iframe {
+			/* The actual size of the iframe itself */
+			width: 500px;
+			height: 750px;
+			border: none; /* Removes the default iframe border */
+			background-color: white; /* Optional: fallback background for the iframe content area */
+		}
+		</style>
+	</head>
 
-<head lang="en">
-    <meta charset="UTF-8">
-    <title>Genesys Cloud WebChat Example</title>
-	<link rel="stylesheet" href="styles.css" />
-</head>
-<body>
-	<div class= "page__title">
-		<h1>Genesys Cloud iFrame Example</h1>
-	</div>
-
-	<div>
-		<button class="btn"><a href="index.html">Home</a></button>
-	</div>
+	<body>	
+		<div class="page__title">
+			<h1>Genesys Cloud iFrame Example</h1>
+		</div>
 	
-	<div class="softphone">
-        <iframe id="softphone" allow="camera *; microphone *; autoplay *; hid *; local-network-access" src="https://apps.usw2.pure.cloud/crm/embeddableFramework.html"></iframe>
-    </div>
-</body>
+		<div>
+			<button class="btn"><a href="index.html">Home</a></button>
+		</div>
+		
+	    <div class="iframe-wrapper">
+	        <iframe id="softphone" width="500" height="750" allow="camera *; microphone *; autoplay *; hid *; local-network-access" src="https://apps.usw2.pure.cloud/crm/embeddableFramework.html"></iframe>
+	    </div>
+	</body>
 </html>
-<!-- comment -->
