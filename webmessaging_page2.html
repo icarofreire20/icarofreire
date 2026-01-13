@@ -35,6 +35,21 @@
 </script>
 
 <script type="text/javascript">
+	Genesys("subscribe", "Engage.inviteAccepted", ({data})=>{
+	  console.log("Engage.inviteAccepted");
+	  console.log(data);
+	});
+	Genesys("subscribe", "Engage.inviteRejected", ({data})=>{
+	  console.log("Engage.inviteRejected");
+	  console.log(data);
+	});
+	Genesys("subscribe", "Engage.inviteOffered", ({data})=>{
+	  console.log("Engage.inviteOffered");
+	  console.log(data);
+	});
+</script>
+
+<script type="text/javascript">
 function clickevent123(){
 Genesys("subscribe", "Journey.ready", function() {
 Genesys("command", "Journey.record", { eventName: "Button_P2" });
@@ -43,14 +58,6 @@ console.log("event sent")
 };
 </script>
 	
-<script>
-  (function(a,t,c,l,o,u,d){a['_genesysJourneySdk']=o;a[o]=a[o]||function(){
-  (a[o].q=a[o].q||[]).push(arguments)},a[o].l=1*new Date();u=t.createElement(c),
-  d=t.getElementsByTagName(c)[0];u.async=1;u.src=l;u.charset='utf-8';d.parentNode.insertBefore(u,d)
-  })(window, document, 'script', 'https://apps.usw2.pure.cloud/journey/sdk/js/web/v1/ac.js', 'ac');
-  ac('init', '8f43b612-6fbc-4fe5-aaa8-34235164a221', { region: 'usw2' });
-  ac('pageview');
-</script>
 
 </body>
 </html>
