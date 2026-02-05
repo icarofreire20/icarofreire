@@ -128,6 +128,17 @@
 		  }
 		});
 	</script>
+
+	<script>
+	Genesys("subscribe", "MessagingService.reconnected", function() {
+		Genesys("command", "MessagingService.sendMessage", {
+			message: "reconnected"
+		},
+			function() {},
+			function() {}
+		);
+	});
+	</script>
 	
 </body>
 </html>
