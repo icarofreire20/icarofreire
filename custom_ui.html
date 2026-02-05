@@ -138,6 +138,22 @@
 			function() {}
 		);
 	});
+
+	Genesys("subscribe", "MessagingService.offline", function() {
+		Genesys("command", "MessagingService.sendMessage", {
+			message: "disconnected"
+		},
+			function() {},
+			function() {}
+		);
+				Genesys("command", "Database.set", {
+			messaging: {
+			customAttributes: {
+				disconnected: "True",
+			}
+		  }
+		});
+	});
 	</script>
 	
 </body>
